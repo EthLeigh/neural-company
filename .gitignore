@@ -1,0 +1,7 @@
+Libs/
+bin/
+obj/
+
+*.sln
+
+.editorconfig
