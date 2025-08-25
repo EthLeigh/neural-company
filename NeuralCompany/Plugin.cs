@@ -9,9 +9,9 @@ namespace NeuralCompany;
 [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
 [BepInDependency("BMX.LobbyCompatibility", BepInDependency.DependencyFlags.HardDependency)]
 [LobbyCompatibility(CompatibilityLevel.ClientOnly, VersionStrictness.None)]
-public class NeuroLethalCompany : BaseUnityPlugin
+public class Plugin : BaseUnityPlugin
 {
-    public static NeuroLethalCompany Instance { get; private set; } = null!;
+    public static Plugin Instance { get; private set; } = null!;
     internal new static ManualLogSource Logger { get; private set; } = null!;
     internal static Harmony? Harmony { get; set; }
 
